@@ -33,6 +33,7 @@ claude mcp add --transport http flask https://api.flask.do/api/mcp/mcp
 | `contents`, `search`, `recent_activity` | Browse folders/assets, search, latest team feedback |
 | `feedback_list`, `feedback_get` | Read feedback with tags, timestamps, recording transcripts (`transcript: "full"` for whole recording) |
 | `wait_for_feedback` | Long-poll - returns new feedback the moment it's left |
+| `get_annotated_frames` | Returns the video frames a recording pointed at / drew on, as images with the drawing rendered in, plus the transcript marked `[FRAME N]` - resolves "this"/"here"/drawn-circle references to actual pixels |
 | `upload_file_start` / `upload_file_complete` | Upload a local video (5GB max) via presigned URL; share link available the instant the upload starts |
 | `upload_video` | Import from a public URL or Google Drive link |
 | `version_of` (param on uploads) | Upload as a new version of an existing asset - one stable link for the whole iteration |

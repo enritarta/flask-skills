@@ -36,9 +36,14 @@ sign-in.
    - `content` is the verbatim text of a comment; `timestamp` is seconds into the video.
    - Recording items carry `recording.transcript` (what the reviewer said, sliced to
      this segment) and `recording.ai_summary`. Treat the transcript as the feedback.
-   - To see exactly what the reviewer was looking at, extract the frame at the
-     feedback timestamp from your local render:
-     `ffmpeg -ss <timestamp> -i <file> -frames:v 1 /tmp/frame.png` and read the image.
+   - When the transcript references something visually ("this", "here", "that button",
+     "move it there", or describes a drawn arrow/circle), call
+     `get_annotated_frames(element_id)`. It returns the actual frames the reviewer was
+     pointing at WITH their drawing rendered in, plus the transcript marked `[FRAME N]`
+     so you can see exactly what each reference means. This is the reliable way to
+     resolve ambiguous references - prefer it over guessing from words alone.
+   - (Local fallback for full-res, no drawing overlay: extract the frame yourself with
+     `ffmpeg -ss <timestamp> -i <file> -frames:v 1 /tmp/frame.png` and read the image.)
 7. **Implement the changes**, re-render, and upload the revision as a NEW VERSION of
    the same asset: pass `version_of: "<asset_id>"` to `upload_file_start` AND
    `upload_file_complete`. Never create a separate asset for a revision.
