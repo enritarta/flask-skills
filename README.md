@@ -13,6 +13,8 @@ agent the full review loop.
 
 ## Install
 
+### Claude Code
+
 ```
 /plugin marketplace add enritarta/flask-plugin
 /plugin install flask@flask
@@ -25,6 +27,20 @@ No plugin manager? Connect the MCP server directly:
 ```
 claude mcp add --transport http flask https://api.flask.do/api/mcp/mcp
 ```
+
+### Cursor, Codex, and other agents
+
+Install the review-loop skill (works across skills-compatible clients):
+
+```
+npx skills add enritarta/flask-plugin
+```
+
+Then connect the MCP server:
+
+- **Cursor**: [![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=flask&config=eyJ1cmwiOiJodHRwczovL2FwaS5mbGFzay5kby9hcGkvbWNwL21jcCJ9)
+- **claude.ai / Claude Desktop**: Settings -> Connectors -> add `https://api.flask.do/api/mcp/mcp`
+- **Any MCP client**: Streamable HTTP at `https://api.flask.do/api/mcp/mcp` (OAuth sign-in opens in the browser on first use)
 
 ## What the agent can do
 
