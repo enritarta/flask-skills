@@ -16,7 +16,7 @@ agent the full review loop.
 ### Claude Code
 
 ```
-/plugin marketplace add enritarta/flask-plugin
+/plugin marketplace add enritarta/flask-skills
 /plugin install flask@flask
 ```
 
@@ -33,7 +33,7 @@ claude mcp add --transport http flask https://api.flask.do/api/mcp/mcp
 Install the review-loop skill (works across skills-compatible clients):
 
 ```
-npx skills add enritarta/flask-plugin
+npx skills add enritarta/flask-skills
 ```
 
 Then connect the MCP server:

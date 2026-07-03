@@ -3,7 +3,7 @@
   "name": "io.github.enritarta/flask",
   "description": "Feedback layer for video. Reviewers talk through feedback; agents read it as structured comments.",
   "repository": {
-    "url": "https://github.com/enritarta/flask-plugin",
+    "url": "https://github.com/enritarta/flask-skills",
     "source": "github"
   },
   "version": "1.1.0",
