@@ -25,7 +25,7 @@ Prefer to wire things yourself? Per-client instructions below.
 ### Claude Code
 
 ```
-/plugin marketplace add enritarta/flask-skills
+/plugin marketplace add tryflask/skills
 /plugin install flask@flask
 ```
 
@@ -42,7 +42,7 @@ claude mcp add --transport http flask https://api.flask.do/api/mcp/mcp
 Install the review-loop skill (works across skills-compatible clients):
 
 ```
-npx skills add enritarta/flask-skills
+npx skills add tryflask/skills
 ```
 
 Then connect the MCP server:

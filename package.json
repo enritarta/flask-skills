@@ -1,6 +1,6 @@
 {
   "name": "flask-feedback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One-shot setup for Flask (flask.do) - the video feedback MCP server for AI agents. Connects the MCP server to Claude Code and Cursor and installs the flask-review agent skill.",
   "type": "module",
   "bin": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enritarta/flask-skills.git"
+    "url": "git+https://github.com/tryflask/skills.git"
   },
   "homepage": "https://flask.do/mcp",
   "keywords": [

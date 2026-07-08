@@ -15,7 +15,7 @@ import { join, dirname } from "node:path";
 
 const SERVER_NAME = "flask";
 const SERVER_URL = "https://api.flask.do/api/mcp/mcp";
-const SKILLS_REPO = "enritarta/flask-skills";
+const SKILLS_REPO = "tryflask/skills";
 const DOCS_URL = "https://flask.do/mcp";
 
 const ok = (msg) => console.log(`  ✓ ${msg}`);
