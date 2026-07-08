@@ -13,6 +13,15 @@ agent the full review loop.
 
 ## Install
 
+One command sets up everything — connects the Flask MCP server (Claude Code,
+Cursor) and installs the review-loop skill for every skills-compatible agent:
+
+```
+npx flask-feedback
+```
+
+Prefer to wire things yourself? Per-client instructions below.
+
 ### Claude Code
 
 ```
