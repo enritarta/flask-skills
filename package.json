@@ -1,6 +1,6 @@
 {
   "name": "flask-feedback",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "One-shot setup for Flask (flask.do) - the video feedback MCP server for AI agents. Connects the MCP server to Claude Code and Cursor and installs the flask-review agent skill.",
   "type": "module",
   "bin": {

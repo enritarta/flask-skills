@@ -82,7 +82,7 @@ function installSkill() {
   }
 }
 
-console.log("\nFlask — video feedback for AI agents (flask.do)\n");
+console.log("\nFlask: video feedback for AI agents (flask.do)\n");
 console.log("Connecting the Flask MCP server:\n");
 connectClaudeCode();
 connectCursor();
